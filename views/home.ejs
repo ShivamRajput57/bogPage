@@ -1,0 +1,21 @@
+<%- include("includes/header.ejs") %>
+<body>
+    <h1>All blogs are present here</h1>
+    <button id="go-to-feedback" onclick="window.location.href='/feedback'">
+        Submit Feedback
+    </button>
+    <div id="feedback-container"></div>
+
+
+    <!-- Embed server-side data for use in the linked JS file -->
+    <script>
+        // const serverData = <%-JSON.stringify(feedbacks) %>; this line is very important JSON.stringify
+        console.log(serverData)
+         // Check the data in the browser console
+    </script>
+    
+
+    <!-- Link the external JavaScript file -->
+    <script src="/home.js"></script>
+</body>
+</html>
